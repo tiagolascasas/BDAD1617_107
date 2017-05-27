@@ -13,66 +13,66 @@ insert into Lang (idLang, lang) values (7, "Chinese");
 
 --Clients (including children): it assumes that any Client over 12 years of age is an adult,
 --as that is what is the most common situation in the hotel business
-insert into Person (idPerson, birthDate, name) values (10, "8/1/1974", "Morgan Griffin");
+insert into Person (idPerson, birthDate, name) values (10, "1974-1-8", "Morgan Griffin");
 insert into Client (idPerson, isChild, childRank, idParent) values (10, 0, null, null);
-insert into Person (idPerson, birthDate, name) values (11, "9/3/1975", "Eleanor Turner");
+insert into Person (idPerson, birthDate, name) values (11, "1975-3-9", "Eleanor Turner");
 insert into Client (idPerson, isChild, childRank, idParent) values (11, 0, null, null);
-insert into Person (idPerson, birthDate, name) values (12, "10/4/1976", "Aidan Gibbons");
+insert into Person (idPerson, birthDate, name) values (12, "1976-4-10", "Aidan Gibbons");
 insert into Client (idPerson, isChild, childRank, idParent) values (12, 0, null, null);
-insert into Person (idPerson, birthDate, name) values (13, "1/9/1980", "Ethan Slater");
+insert into Person (idPerson, birthDate, name) values (13, "1980-9-1", "Ethan Slater");
 insert into Client (idPerson, isChild, childRank, idParent) values (13, 0, null, null);
-insert into Person (idPerson, birthDate, name) values (14, "12/5/1984", "Daniel Naylor");
+insert into Person (idPerson, birthDate, name) values (14, "1984-5-12", "Daniel Naylor");
 insert into Client (idPerson, isChild, childRank, idParent) values (14, 0, null, null);
-insert into Person (idPerson, birthDate, name) values (15, "1/2/2012", "Kiera Slater");	
+insert into Person (idPerson, birthDate, name) values (15, "2012-2-1", "Kiera Slater");
 insert into Client (idPerson, isChild, childRank, idParent) values (15, 1, "kid", 13);	--son of 13
-insert into Person (idPerson, birthDate, name) values (16, "2/12/2013", "Anna Slater");	
+insert into Person (idPerson, birthDate, name) values (16, "2013-12-2", "Anna Slater");
 insert into Client (idPerson, isChild, childRank, idParent) values (16, 1, "kid", 13);	--son of 13
-insert into Person (idPerson, birthDate, name) values (17, "3/13/2014", "Aaliyah Griffin");
+insert into Person (idPerson, birthDate, name) values (17, "2014-13-3", "Aaliyah Griffin");
 insert into Client (idPerson, isChild, childRank, idParent) values (17, 1, "toddler", 10);	--son of 10
-insert into Person (idPerson, birthDate, name) values (18, "30/8/2015", "Jessica Gibbons");
+insert into Person (idPerson, birthDate, name) values (18, "2015-8-30", "Jessica Gibbons");
 insert into Client (idPerson, isChild, childRank, idParent) values (18, 1, "toddler", 12);	--son of 12
-insert into Person (idPerson, birthDate, name) values (20, "18/5/1965", "Katherine Cartwright");
+insert into Person (idPerson, birthDate, name) values (20, "1965-5-18", "Katherine Cartwright");
 insert into Client (idPerson, isChild, childRank, idParent) values (20, 0, null, null);
-insert into Person (idPerson, birthDate, name) values (21, "7/4/1966", "Nicole Forster");
+insert into Person (idPerson, birthDate, name) values (21, "1966-4-7", "Nicole Forster");
 insert into Client (idPerson, isChild, childRank, idParent) values (21, 0, null, null);
 ------------------------
 --insert more Clients...
 ------------------------
 
---Rooms 
-insert into Room (idRoom, lastCleaning, numberOfBeds) values (1, "1/04/2017", 3);
-insert into Room (idRoom, lastCleaning, numberOfBeds) values (2, "1/04/2017", 3);
-insert into Room (idRoom, lastCleaning, numberOfBeds) values (3, "1/04/2017", 3);
-insert into Room (idRoom, lastCleaning, numberOfBeds) values (4, "1/04/2017", 3);
-insert into Room (idRoom, lastCleaning, numberOfBeds) values (5, "1/04/2017", 2);
-insert into Room (idRoom, lastCleaning, numberOfBeds) values (6, "1/04/2017", 2);
-insert into Room (idRoom, lastCleaning, numberOfBeds) values (7, "1/04/2017", 2);
-insert into Room (idRoom, lastCleaning, numberOfBeds) values (8, "1/04/2017", 2);
-insert into Room (idRoom, lastCleaning, numberOfBeds) values (9, "1/04/2017", 2);
-insert into Room (idRoom, lastCleaning, numberOfBeds) values (10, "1/04/2017", 2);
-insert into Room (idRoom, lastCleaning, numberOfBeds) values (11, "1/04/2017", 2);
-insert into Room (idRoom, lastCleaning, numberOfBeds) values (12, "1/04/2017", 1);
-insert into Room (idRoom, lastCleaning, numberOfBeds) values (13, "1/04/2017", 1);
-insert into Room (idRoom, lastCleaning, numberOfBeds) values (14, "1/04/2017", 1);
-insert into Room (idRoom, lastCleaning, numberOfBeds) values (15, "1/04/2017", 1);
-insert into Room (idRoom, lastCleaning, numberOfBeds) values (16, "1/04/2017", 1);
-insert into Room (idRoom, lastCleaning, numberOfBeds) values (17, "1/04/2017", 1);
-insert into Room (idRoom, lastCleaning, numberOfBeds) values (18, "1/04/2017", 1);
-insert into Room (idRoom, lastCleaning, numberOfBeds) values (19, "1/04/2017", 1);
+--Rooms
+insert into Room (idRoom, lastCleaning, numberOfBeds) values (1, "2017-04-1", 3);
+insert into Room (idRoom, lastCleaning, numberOfBeds) values (2, "2017-04-1", 3);
+insert into Room (idRoom, lastCleaning, numberOfBeds) values (3, "2017-04-1", 3);
+insert into Room (idRoom, lastCleaning, numberOfBeds) values (4, "2017-04-1", 3);
+insert into Room (idRoom, lastCleaning, numberOfBeds) values (5, "2017-04-1", 2);
+insert into Room (idRoom, lastCleaning, numberOfBeds) values (6, "2017-04-1", 2);
+insert into Room (idRoom, lastCleaning, numberOfBeds) values (7, "2017-04-1", 2);
+insert into Room (idRoom, lastCleaning, numberOfBeds) values (8, "2017-04-1", 2);
+insert into Room (idRoom, lastCleaning, numberOfBeds) values (9, "2017-04-1", 2);
+insert into Room (idRoom, lastCleaning, numberOfBeds) values (10, "2017-04-1", 2);
+insert into Room (idRoom, lastCleaning, numberOfBeds) values (11, "2017-04-1", 2);
+insert into Room (idRoom, lastCleaning, numberOfBeds) values (12, "2017-04-1", 1);
+insert into Room (idRoom, lastCleaning, numberOfBeds) values (13, "2017-04-1", 1);
+insert into Room (idRoom, lastCleaning, numberOfBeds) values (14, "2017-04-1", 1);
+insert into Room (idRoom, lastCleaning, numberOfBeds) values (15, "2017-04-1", 1);
+insert into Room (idRoom, lastCleaning, numberOfBeds) values (16, "2017-04-1", 1);
+insert into Room (idRoom, lastCleaning, numberOfBeds) values (17, "2017-04-1", 1);
+insert into Room (idRoom, lastCleaning, numberOfBeds) values (18, "2017-04-1", 1);
+insert into Room (idRoom, lastCleaning, numberOfBeds) values (19, "2017-04-1", 1);
 
 --Reservations (which have foreign keys to Room)
-insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (1, "14/04/2017", "23/04/2017", "triple", 1);
-insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (2, "26/04/2017", "28/04/2017", "double", 5);
-insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (3, "12/05/2017", "23/05/2017", "single", 12);
-insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (4, "01/06/2017", "11/06/2017", "double", 6);
-insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (5, "02/05/2017", "26/05/2017", "single", 13);
-insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (6, "15/05/2017", "30/05/2017", "single", 14);
-insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (7, "11/06/2017", "13/06/2017", "single", 15);
-insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (8, "12/04/2017", "25/04/2017", "double", 2);
-insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (9, "08/05/2017", "10/05/2017", "triple", 3);
-insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (10, "10/05/2017", "21/05/2017", "double", 7);
-insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (11, "11/06/2017", "16/06/2017", "double", 8);
-insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (12, "17/06/2017", "27/06/2017", "single", 16);
+insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (1, "2017-04-14", "2017-04-23", "triple", 1);
+insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (2, "2017-04-26", "2017-04-28", "double", 5);
+insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (3, "2017-05-12", "2017-05-23", "single", 12);
+insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (4, "2017-06-01", "2017-06-11", "double", 6);
+insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (5, "2017-05-02", "2017-05-26", "single", 13);
+insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (6, "2017-05-15", "2017-05-30", "single", 14);
+insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (7, "2017-06-11", "2017-06-13", "single", 15);
+insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (8, "2017-04-12", "2017-04-25", "double", 2);
+insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (9, "2017-05-08", "2017-05-10", "triple", 3);
+insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (10, "2017-05-10", "2017-05-21", "double", 7);
+insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (11, "2017-06-11", "2017-06-16", "double", 8);
+insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (12, "2017-06-17", "2017-06-27", "single", 16);
 
 --Reviews (since reviews are optional, there can be some reservations without reviews)
 insert into Review (idReview, score, textReview, idReservation) values (1, 3, "Could have some tea bags available. It had coffee, but no tea.", 1);
@@ -118,23 +118,23 @@ insert into HotelFeature (idService, featureName) values (5, "Gym");
 --Entretainment
 insert into Service (idService, paymentPerShift) values (6, 26.0);
 insert into Entretainment (idService, childrenRank, entretainmentDate, beginning, ending, name, participantType)
-			values (6, null, "1/04/2017", 16, 17, "Performance comparison between different C++ compilers", "adult");
-			
+			values (6, null, "2017-04-1", 16, 17, "Performance comparison between different C++ compilers", "adult");
+
 insert into Service (idService, paymentPerShift) values (7, 26.0);
 insert into Entretainment (idService, childrenRank, entretainmentDate, beginning, ending, name, participantType)
-			values (7, "toddler", "1/04/2017", 14, 15, "magic show", "children");
-			
+			values (7, "toddler", "2017-04-1", 14, 15, "magic show", "children");
+
 insert into Service (idService, paymentPerShift) values (8, 26.0);
 			insert into Entretainment (idService, childrenRank, entretainmentDate, beginning, ending, name, participantType)
-			values (8, "kid", "2/04/2017", 16, 17, "football match", "children");
-			
+			values (8, "kid", "2017-04-2", 16, 17, "football match", "children");
+
 insert into Service (idService, paymentPerShift) values (9, 26.0);
 insert into Entretainment (idService, childrenRank, entretainmentDate, beginning, ending, name, participantType)
-			values (9, "all children", "3/04/2017", 16, 17, "movies", "children");
-			
+			values (9, "all children", "2017-04-3", 16, 17, "movies", "children");
+
 insert into Service (idService, paymentPerShift) values (10, 26.0);
 insert into Entretainment (idService, childrenRank, entretainmentDate, beginning, ending, name, participantType)
-			values (10, null, "5/04/2017", 21, 23, "exotic animals display", "all");
+			values (10, null, "2017-04-5", 21, 23, "exotic animals display", "all");
 
 --ClientEntretainment
 insert into ClientEntretainment (idPerson, idService) values (10, 6);
@@ -178,59 +178,59 @@ insert into CleaningTime (idRoom, idService, beginning, ending) values (17, 1, 1
 insert into CleaningTime (idRoom, idService, beginning, ending) values (18, 1, 1800, 1820);
 insert into CleaningTime (idRoom, idService, beginning, ending) values (19, 1, 1820, 1840);
 
---Meal 
-insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (0, "14/4/2017", "triple", 0, 13); 	--inserted meals for three clients of a single reservation during three days
-insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (1, "14/4/2017", "triple", 0, 15);	--note that the "triple" argument is not related to the number of people, 
-insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (2, "14/4/2017", "triple", 0, 16);	--but the number of meals the client associated can have on that day
-insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (3, "15/4/2017", "triple", 0, 13);
-insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (4, "15/4/2017", "triple", 0, 15);
-insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (5, "15/4/2017", "triple", 0, 16);
-insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (6, "16/4/2017", "triple", 0, 13);
-insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (7, "16/4/2017", "triple", 0, 15);
-insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (8, "16/4/2017", "triple", 0, 16);
-insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (9, "12/04/2017", "double", 0, 20);	--inserted meals for two clients of a single reservation during two days
-insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (10, "13/04/2017", "double", 0, 20);
-insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (11, "12/04/2017", "double", 0, 21);
-insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (12, "13/04/2017", "double", 0, 21);
-insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (13, "02/05/2017", "single", 0, 11);--inserted meals for one client of a single reservation during five days
-insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (14, "03/05/2017", "single", 0, 11);
-insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (15, "04/05/2017", "single", 0, 11);
-insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (16, "05/05/2017", "single", 0, 11);
-insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (17, "06/05/2017", "single", 0, 11);
+--Meal
+insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (0, "2017-4-14", "triple", 0, 13); 	--inserted meals for three clients of a single reservation during three days
+insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (1, "2017-4-14", "triple", 0, 15);	--note that the "triple" argument is not related to the number of people,
+insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (2, "2017-4-14", "triple", 0, 16);	--but the number of meals the client associated can have on that day
+insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (3, "2017-4-15", "triple", 0, 13);
+insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (4, "2017-4-15", "triple", 0, 15);
+insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (5, "2017-4-15", "triple", 0, 16);
+insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (6, "2017-4-16", "triple", 0, 13);
+insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (7, "2017-4-16", "triple", 0, 15);
+insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (8, "2017-4-16", "triple", 0, 16);
+insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (9, "2017-04-12", "double", 0, 20);	--inserted meals for two clients of a single reservation during two days
+insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (10, "2017-04-13", "double", 0, 20);
+insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (11, "2017-04-12", "double", 0, 21);
+insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (12, "2017-04-13", "double", 0, 21);
+insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (13, "2017-05-02", "single", 0, 11);--inserted meals for one client of a single reservation during five days
+insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (14, "2017-05-03", "single", 0, 11);
+insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (15, "2017-05-04", "single", 0, 11);
+insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (16, "2017-05-05", "single", 0, 11);
+insert into Meal (idMeal, mealDate, typeOfMeal, idService, idPerson) values (17, "2017-05-06", "single", 0, 11);
 
 
 --Employees - each employee can only work at one service, but a service can have many employees
-insert into Person (idPerson, birthDate, name) values (0, "1/7/1980", "Nicholas Chapman");
+insert into Person (idPerson, birthDate, name) values (0, "1980-7-1", "Nicholas Chapman");
 insert into Employee (idPerson, shiftsPerMonth, idService) values (0, 30, 0);	--restaurant
-insert into Person (idPerson, birthDate, name) values (1, "15/4/1981", "Anna Mahmood");
+insert into Person (idPerson, birthDate, name) values (1, "1981-4-15", "Anna Mahmood");
 insert into Employee (idPerson, shiftsPerMonth, idService) values (1, 25, 0);	--restaurant
-insert into Person (idPerson, birthDate, name) values (2, "23/3/1982", "Noah Ryan");
+insert into Person (idPerson, birthDate, name) values (2, "1982-3-23", "Noah Ryan");
 insert into Employee (idPerson, shiftsPerMonth, idService) values (2, 27, 0);	--restaurant
-insert into Person (idPerson, birthDate, name) values (3, "3/2/1983", "Freddie Wong");
+insert into Person (idPerson, birthDate, name) values (3, "1983-2-3", "Freddie Wong");
 insert into Employee (idPerson, shiftsPerMonth, idService) values (3, 35, 1);	--cleaning
-insert into Person (idPerson, birthDate, name) values (4, "4/11/1984", "Francesca Harding");
+insert into Person (idPerson, birthDate, name) values (4, "1984-11-4", "Francesca Harding");
 insert into Employee (idPerson, shiftsPerMonth, idService) values (4, 33, 1);	--cleaning
-insert into Person (idPerson, birthDate, name) values (5, "5/10/1985", "Zak	Barlow");
+insert into Person (idPerson, birthDate, name) values (5, "1985-10-5", "Zak	Barlow");
 insert into Employee (idPerson, shiftsPerMonth, idService) values (5, 31, 2);	--pool
-insert into Person (idPerson, birthDate, name) values (6, "6/8/1970", "Freya Knight");
+insert into Person (idPerson, birthDate, name) values (6, "1970-8-6", "Freya Knight");
 insert into Employee (idPerson, shiftsPerMonth, idService) values (6, 30, 3);	--bar
-insert into Person (idPerson, birthDate, name) values (7, "7/2/1974", "Isabelle Chapman");
+insert into Person (idPerson, birthDate, name) values (7, "1974-2-7", "Isabelle Chapman");
 insert into Employee (idPerson, shiftsPerMonth, idService) values (7, 29, 4);	--sauna
-insert into Person (idPerson, birthDate, name) values (8, "7/2/1975", "Luke Gallagher");
+insert into Person (idPerson, birthDate, name) values (8, "1975-2-7", "Luke Gallagher");
 insert into Employee (idPerson, shiftsPerMonth, idService) values (8, 29, 5);	--gym
-insert into Person (idPerson, birthDate, name) values (9, "14/9/1978", "Billy Reid");
+insert into Person (idPerson, birthDate, name) values (9, "1978-9-14", "Billy Reid");
 insert into Employee (idPerson, shiftsPerMonth, idService) values (9, 29, 6);	--entretainment
-insert into Person (idPerson, birthDate, name) values (22, "12/11/1954", "Molly Davison");
+insert into Person (idPerson, birthDate, name) values (22, "1954-11-12", "Molly Davison");
 insert into Employee (idPerson, shiftsPerMonth, idService) values (22, 29, 7);	--entretainment
-insert into Person (idPerson, birthDate, name) values (23, "17/2/1992", "Ava Holmes");
+insert into Person (idPerson, birthDate, name) values (23, "1992-2-17", "Ava Holmes");
 insert into Employee (idPerson, shiftsPerMonth, idService) values (23, 29, 8);	--entretainment
-insert into Person (idPerson, birthDate, name) values (24, "5/7/1990", "Zachary Morley");
+insert into Person (idPerson, birthDate, name) values (24, "1990-7-5", "Zachary Morley");
 insert into Employee (idPerson, shiftsPerMonth, idService) values (24, 29, 9);	--entretainment
-insert into Person (idPerson, birthDate, name) values (25, "30/4/19786", "Kai Godfrey");
+insert into Person (idPerson, birthDate, name) values (25, "19786-4-30", "Kai Godfrey");
 insert into Employee (idPerson, shiftsPerMonth, idService) values (25, 29, 9);	--entretainment
-insert into Person (idPerson, birthDate, name) values (26, "22/3/1977", "Mollie Coates");
+insert into Person (idPerson, birthDate, name) values (26, "1977-3-22", "Mollie Coates");
 insert into Employee (idPerson, shiftsPerMonth, idService) values (26, 29, 10);	--entretainment
-insert into Person (idPerson, birthDate, name) values (27, "26/1/1987", "Daisy Leach");
+insert into Person (idPerson, birthDate, name) values (27, "1987-1-26", "Daisy Leach");
 insert into Employee (idPerson, shiftsPerMonth, idService) values (27, 29, 10);	--entretainment
 
 --LanguagePerson
@@ -280,10 +280,3 @@ insert into LanguagePerson (idPerson, idLang) values (26, 0);
 insert into LanguagePerson (idPerson, idLang) values (26, 2);
 insert into LanguagePerson (idPerson, idLang) values (27, 0);
 insert into LanguagePerson (idPerson, idLang) values (27, 3);
-
-
-
-
-
-
-
