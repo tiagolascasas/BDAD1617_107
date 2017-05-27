@@ -1,2 +1,3 @@
-.pragma foreign_keys = on;
+pragma foreign_keys = on;
 
+drop trigger if exists gatilho1;

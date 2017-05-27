@@ -1,2 +1,1 @@
-.pragma foreign_keys = on;
-
+pragma foreign_keys = on;
