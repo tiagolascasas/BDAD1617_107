@@ -73,6 +73,8 @@ insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) v
 insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (10, "2017-05-10", "2017-05-21", "double", 7);
 insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (11, "2017-06-11", "2017-06-16", "double", 8);
 insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (12, "2017-06-17", "2017-06-27", "single", 16);
+insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (13, "2017-07-17", "2017-07-27", "single", 16);
+insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (14, "2017-08-01", "2017-08-13", "single", 15);
 
 --Reviews (since reviews are optional, there can be some reservations without reviews)
 insert into Review (idReview, score, textReview, idReservation) values (1, 3, "Could have some tea bags available. It had coffee, but no tea.", 1);
