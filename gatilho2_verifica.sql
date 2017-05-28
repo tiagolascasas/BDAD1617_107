@@ -7,11 +7,11 @@ pragma foreign_keys = on;
 select  Person.idPerson, lang
 from Person, LanguagePerson, Lang
 where Person.idPerson = LanguagePerson.idPerson and
-	LanguagePerson.idLang = Lang.idLang;
+	LanguagePerson.idLang = Lang.idLang;	--Show all pairs person-language
 
-delete from Lang where lang = "English";
+delete from Lang where lang = "English";	--remove language "English"
 
 select  Person.idPerson, lang
 from Person, LanguagePerson, Lang
 where Person.idPerson = LanguagePerson.idPerson and
-	LanguagePerson.idLang = Lang.idLang;
+	LanguagePerson.idLang = Lang.idLang;	-- all pairs person-english should have been removed

@@ -165,7 +165,6 @@ insert into ClientEntretainment (idPerson, idService) values (15, 10);
 insert into ClientEntretainment (idPerson, idService) values (16, 8);
 insert into ClientEntretainment (idPerson, idService) values (16, 9);
 insert into ClientEntretainment (idPerson, idService) values (17, 7);	--17 and 18 are toddlers
-insert into ClientEntretainment (idPerson, idService) values (17, 8);
 insert into ClientEntretainment (idPerson, idService) values (17, 10);
 insert into ClientEntretainment (idPerson, idService) values (18, 7);
 insert into ClientEntretainment (idPerson, idService) values (20, 10);

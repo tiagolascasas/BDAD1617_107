@@ -183,8 +183,8 @@ create table LanguagePerson
 	idPerson integer,
 	idLang integer,
 	primary key (idPerson, idLang),
-	constraint per_fkey foreign key (idPerson) references Person,
-	constraint lang_fkey foreign key (idLang) references Lang
+	constraint per_fkey foreign key (idPerson) references Person on delete cascade,
+	constraint lang_fkey foreign key (idLang) references Lang on delete cascade
 );
 
 create table ClientEntretainment
