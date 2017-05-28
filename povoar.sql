@@ -61,14 +61,14 @@ insert into Room (idRoom, lastCleaning, numberOfBeds) values (19, "2017-04-01", 
 insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (1, "2017-04-14", "2017-04-23", "triple", 1);
 insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (2, "2017-04-26", "2017-04-28", "double", 5);
 insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (3, "2017-05-12", "2017-05-23", "single", 12);
-insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (4, "2017-06-01", "2017-06-11", "double", 6);
+insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (4, "2017-07-01", "2017-07-11", "double", 6);
 insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (5, "2017-05-02", "2017-05-26", "single", 13);
 insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (6, "2017-05-15", "2017-05-30", "single", 14);
 insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (7, "2017-06-11", "2017-06-13", "single", 15);
 insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (8, "2017-04-12", "2017-04-25", "double", 2);
 insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (9, "2017-05-08", "2017-05-10", "triple", 3);
 insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (10, "2017-05-10", "2017-05-21", "double", 7);
-insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (11, "2017-06-11", "2017-06-16", "double", 8);
+insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (11, "2017-06-11", "2017-07-16", "double", 8);
 insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (12, "2017-06-17", "2017-06-27", "single", 16);
 insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (13, "2017-07-17", "2017-07-27", "single", 16);
 insert into Reservation (idReservation, beginning, ending, foodRegime, idRoom) values (14, "2017-08-01", "2017-08-13", "single", 15);
@@ -224,7 +224,7 @@ insert into Person (idPerson, birthDate, name) values (3, "1983-02-03", "Freddie
 insert into Employee (idPerson, shiftsPerMonth, idService) values (3, 35, 1);	--cleaning
 insert into Person (idPerson, birthDate, name) values (4, "1984-11-04", "Francesca Harding");
 insert into Employee (idPerson, shiftsPerMonth, idService) values (4, 33, 1);	--cleaning
-insert into Person (idPerson, birthDate, name) values (5, "1985-10-05", "Zak	Barlow");
+insert into Person (idPerson, birthDate, name) values (5, "1985-10-05", "Zak Barlow");
 insert into Employee (idPerson, shiftsPerMonth, idService) values (5, 31, 2);	--pool
 insert into Person (idPerson, birthDate, name) values (6, "1970-08-06", "Freya Knight");
 insert into Employee (idPerson, shiftsPerMonth, idService) values (6, 30, 3);	--bar
