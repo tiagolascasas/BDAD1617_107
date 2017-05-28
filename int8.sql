@@ -2,6 +2,8 @@
 .headers on
 .nullvalue NULL
 
+DROP View IF EXISTS family;
+
 create view family as
 		select c.idPerson , count(c1.idPerson)+1 as Count
 		from Client c
