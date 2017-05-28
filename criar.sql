@@ -72,10 +72,11 @@ create table Review
 
 create table CleaningTime
 (
-	idRoom integer primary key,
-	idService integer	not null,
+	idRoom integer,
+	idService integer,
 	beginning numeric	not null,
 	ending numeric		not null,
+	primary key (idRoom, idService),
 	constraint uniqueHour unique (idService, beginning, ending),
 	constraint room_fkey foreign key (idRoom) references Room,
 	constraint cl_fkey foreign key (idService) references Cleaning,

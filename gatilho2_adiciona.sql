@@ -1,9 +1,8 @@
 pragma foreign_keys = on;
 
 create trigger gatilho2
-after delete on Employee
+before delete on Lang
 for each row
 begin
-	delete from Person where idPerson = Old.idPerson;
-	
+	delete from LanguagePerson where idLang = Old.idLang;
 end;
