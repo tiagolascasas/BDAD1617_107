@@ -20,13 +20,13 @@ drop table if exists ClientEntretainment;
 
 create table Lang
 (
-	idLang integer unique not null primary key,
+	idLang integer primary key,
 	lang text unique not null
 );
 
 create table Reservation
 (
-	idReservation integer unique not null primary key,
+	idReservation integer primary key,
 	beginning date 	not null,
 	ending date 	not null,
 	foodRegime text not null,
@@ -40,7 +40,7 @@ create table Reservation
 
 create table Room
 (
-	idRoom integer unique not null primary key,
+	idRoom integer primary key,
 	lastCleaning date 	not null,
 	numberOfBeds number not null,
 	constraint nBeds check (numberOfBeds > 0 and numberOfBeds < 4)
@@ -48,7 +48,7 @@ create table Room
 
 create table Meal
 (
-	idMeal integer unique not null primary key,
+	idMeal integer primary key,
 	mealDate date 		not null,
 	typeOfMeal text 	not null,
 	idService integer 	not null,
@@ -62,7 +62,7 @@ create table Meal
 
 create table Review
 (
-	idReview integer unique not null primary key,
+	idReview integer primary key,
 	score numeric	not null,
 	textReview text	not null,
 	idReservation integer unique not null,
@@ -72,7 +72,7 @@ create table Review
 
 create table CleaningTime
 (
-	idRoom integer unique not null primary key,
+	idRoom integer primary key,
 	idService integer	not null,
 	beginning numeric	not null,
 	ending numeric		not null,
@@ -84,14 +84,14 @@ create table CleaningTime
 
 create table Service
 (
-	idService integer unique not null primary key,
+	idService integer primary key,
 	paymentPerShift real	not null,
 	constraint validPay check (paymentPerShift > 0)
 );
 
 create table HotelFeature
 (
-	idService integer unique not null primary key,
+	idService integer primary key,
 	featureName text	not null,
 	constraint ser_fkey foreign key (idService) references Service,
 	constraint featureType check (	featureName = "Pool" or
@@ -102,7 +102,7 @@ create table HotelFeature
 
 create table Entretainment
 (
-	idService integer unique not null primary key,
+	idService integer primary key,
 	childrenRank text,		--can be null if participantType = all or adult
 	entretainmentDate date	not null,
 	beginning numeric		not null,
@@ -117,12 +117,12 @@ create table Entretainment
 							childrenRank = "kid" or
 							childrenRank = "teen" or
 							childrenRank = "all children" or
-							(childrenRank = null and participantType != "children")) 
+							(childrenRank = null and participantType != "children"))
 );
 
 create table Restaurant
 (
-	idService integer unique not null primary key,
+	idService integer primary key,
 	closingHour numeric		not null,
 	numberOfChairs numeric	not null,
 	numberOfTables numeric	not null,
@@ -134,20 +134,20 @@ create table Restaurant
 
 create table Cleaning
 (
-	idService integer unique not null primary key,
+	idService integer primary key,
 	constraint ser_fkey foreign key (idService) references Service
 );
 
 create table Person
 (
-	idPerson integer unique primary key,
+	idPerson integer primary key,
 	birthDate date	not null,
 	name text		not null
 );
 
 create table Employee
 (
-	idPerson integer unique not null primary key,
+	idPerson integer primary key,
 	shiftsPerMonth numeric	not null,
 	idService integer		not null,
 	constraint per_fkey foreign key (idPerson) references Person,
@@ -156,7 +156,7 @@ create table Employee
 
 create table Client
 (
-	idPerson integer unique not null primary key,
+	idPerson integer primary key,
 	isChild boolean		not null default 0,
 	childRank text,		--
 	idParent integer,	-- both can be null if isChild is set to false
@@ -170,8 +170,8 @@ create table Client
 
 create table ClientReservation
 (
-	idPerson integer		not null,
-	idReservation integer	not null,
+	idPerson integer,
+	idReservation integer,
 	primary key (idPerson, idReservation),
 	constraint per_fkey foreign key (idPerson) references Person,
 	constraint resv_fkey foreign key (idReservation) references Reservation
@@ -179,8 +179,8 @@ create table ClientReservation
 
 create table LanguagePerson
 (
-	idPerson integer	not null,
-	idLang integer		not null,
+	idPerson integer,
+	idLang integer,
 	primary key (idPerson, idLang),
 	constraint per_fkey foreign key (idPerson) references Person,
 	constraint lang_fkey foreign key (idLang) references Lang
@@ -188,8 +188,8 @@ create table LanguagePerson
 
 create table ClientEntretainment
 (
-	idPerson integer	not null,
-	idService integer	not null,
+	idPerson integer,
+	idService integer,
 	primary key (idPerson, idService),
 	constraint per_fkey foreign key (idPerson) references Person,
 	constraint ser_fkey foreign key (idService) references Entretainment
